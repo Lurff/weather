@@ -1,0 +1,13 @@
+{
+	"toast_city_error": {
+		"title": "Geçersiz şehir",
+		"description": "Lütfen geçerli bir şehir ismi giriniz"
+	},
+	"navbar": {
+		"dropdown": {
+			"placeholder": "Dil Seç"
+		},
+		"input_label": "Şehir",
+		"button_label": "Arat"
+	}
+}

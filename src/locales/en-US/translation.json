@@ -1,0 +1,13 @@
+{
+	"toast_city_error": {
+		"title": "Wrong city name",
+		"description": "Please enter the current city name"
+	},
+	"navbar": {
+		"dropdown": {
+			"placeholder": "Select Language"
+		},
+		"input_label": "City",
+		"button_label": "Search"
+	}
+}
