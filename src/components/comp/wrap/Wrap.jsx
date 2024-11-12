@@ -160,7 +160,7 @@ const Wrap = () => {
 							{t("wrap.description")}
 						</span>
 					</div>
-					<div className="w-full flex items-center justify-start">
+					<div className="w-full flex items-center justify-start max-lg:justify-center">
 						<Button
 							label={t("wrap.button")}
 							raised={true}

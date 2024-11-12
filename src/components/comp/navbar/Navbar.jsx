@@ -94,6 +94,7 @@ const Navbar = () => {
 							id="city"
 							className="w-full h-full outline-0 border border-gray-300/50 bg-transparent px-3"
 							onChange={HandleText}
+							onKeyUp={(e) => e.key == "Enter" && GetDataFromApi()}
 						/>
 						<label htmlFor="city">{t("navbar.input_label")}</label>
 					</FloatLabel>
