@@ -9,5 +9,28 @@
 		},
 		"input_label": "Şehir",
 		"button_label": "Arat"
+	},
+	"footer": {
+		"developer": "Bir <Link>Atakan Çoban</Link> uygulamasıdır.",
+		"description": "© 2024-Tüm hakları <strong>MIT</strong> lisansı ile saklanmaktadır."
+	},
+	"wrap": {
+		"sunrise": "Gün Doğumu",
+		"sunset": "Gün Batımı",
+		"long": "Boylam",
+		"lat": "Enlem",
+		"feels_like": "Hissedilen Sıcaklık",
+		"temp": "Sıcaklık",
+		"humidity": "Nem",
+		"pressure": "Basınç",
+		"grounded_level": "Zemin Seviyesi",
+		"sea_level": "Deniz Seviyesi",
+		"wind": {
+			"deg": "Rüzgar Derecesi",
+			"speed": "Rüzgar Hızı"
+		},
+		"title": "Gizlilik Ve Güvenlik",
+		"description": "Sitemizde kullanıcılardan sadece konum bilgisi alınıyor fakat bu konum bilgilerini sadece kullanıcılarımızın bulunduğu 'enlem' ve 'boylam' kordinatlarını kullanıp bulundukları konumdaki hava durum bilgilerini sunuyoruz. Kullanıcılardan alınan bilgiler kesinlikle depolanmıyor, saklanmıyor veya üçüncü şahıs kişilerle paylaşılmıyor. Tüm veriler, kullanıcılarımızın tarayıcıları üzerinde işlem görür ve hesaplama sonuçları anlık olarak sunulur.",
+		"button": "Konumumdan Arama Yap"
 	}
 }

@@ -9,5 +9,28 @@
 		},
 		"input_label": "City",
 		"button_label": "Search"
+	},
+	"footer": {
+		"developer": "It is an <Link>Atakan Çoban</Link> app.",
+		"description": "© 2024-All rights reserved by the <strong>MIT</strong> license."
+	},
+	"wrap": {
+		"sunrise": "Sunrise",
+		"sunset": "Sunset",
+		"lat": "Latitude",
+		"long": "Longitude",
+		"feels_like": "Feels Like",
+		"temp": "Temp",
+		"humidity": "Humidity",
+		"pressure": "Pressure",
+		"grounded_level": "Grounded Level",
+		"sea_level": "Sea Level",
+		"wind": {
+			"speed": "Wind Speed",
+			"deg": "Wind Degree"
+		},
+		"title": "Privacy & Policy",
+		"description": "On our site, only location information is received from users, but we only provide this location information using the coordinates of the 'latitude' and 'longitude' where our users are located and the weather information in the location they are located. The information received from users is definitely not stored, stored or shared with third-party persons. All data is processed on the browsers of our users and the calculation results are presented instantaneously.",
+		"button": "Search My Current Location"
 	}
 }
