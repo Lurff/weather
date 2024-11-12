@@ -15,7 +15,7 @@ const Layout = () => {
 	const { value } = useContext(Context);
 
 	return (
-		<div className="w-full h-full flex items-center justify-center flex-col">
+		<div className="w-full min-h-screen flex items-center justify-between flex-col">
 			<Toast ref={value.toast} position="top-center" />
 			<Navbar />
 			<Wrap />

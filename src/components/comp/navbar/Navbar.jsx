@@ -86,7 +86,7 @@ const Navbar = () => {
 
 	return (
 		<div className="w-full flex justify-center sticky pt-5">
-			<div className="w-1/2 p-5 border border-[#555] rounded-lg gap-5 flex">
+			<div className="w-1/2 max-lg:w-3/4 p-5 border border-[#555] rounded-lg gap-5 flex">
 				<div className="w-full h-full flex items-center justify-center gap-5">
 					<FloatLabel className="w-4/5 h-2/3 flex items-center justify-center">
 						<InputText
@@ -101,7 +101,7 @@ const Navbar = () => {
 						label={t("navbar.button_label")}
 						raised={true}
 						size="large"
-						className="px-3 py-1.5 bg-violet-800/50 hover:bg-violet-900"
+						className="px-3 py-1.5 bg-violet-800/50 hover:bg-violet-900 max-lg:px-2 max-lg:py-1 text-center"
 						onClick={GetDataFromApi}
 						disabled={!value.city.length > 0}
 						loading={value.loading}
@@ -109,7 +109,7 @@ const Navbar = () => {
 				</div>
 				<Dropdown
 					placeholder={t("navbar.dropdown.placeholder")}
-					className="bg-transparent"
+					className="bg-transparent max-lg:hidden"
 					options={Options}
 					optionLabel="label"
 					optionValue="value"

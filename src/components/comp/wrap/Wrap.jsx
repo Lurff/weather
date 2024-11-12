@@ -71,19 +71,19 @@ const Wrap = () => {
 	};
 
 	return (
-		<div className="w-1/2 h-full flex items-center flex-row max-lg:w-full max-lg:flex-col max-lg:gap-5">
+		<div className="w-1/2 min-h-full flex items-center justify-center flex-row max-lg:w-3/4 max-lg:flex-col max-lg:gap-5 m-5">
 			{(value.data && (
-				<div className="w-full flex flex-col items-center gap-5">
+				<div className="w-full flex flex-col items-center gap-5 max-lg:flex-col">
 					<span className="font-bold text-5xl">
 						{value.data.name},{value.data.sys.country}
 					</span>
-					<div className="w-full flex items-center justify-center">
-						<div className="w-1/3 flex items-center justify-center gap-5">
+					<div className="w-full flex items-center justify-center max-lg:flex-col">
+						<div className="w-1/3 flex items-center justify-center gap-5 text-nowrap">
 							<div className="flex flex-col justify-center text-lg items-center">
 								<span className="font-medium">{t("wrap.sunrise")}</span>
 								<span>{FormatData(value.data.sys.sunrise)}</span>
 							</div>
-							<div className="flex flex-col justify-center text-lg items-center">
+							<div className="flex flex-col justify-center text-lg items-center text-nowrap">
 								<span className="font-medium">{t("wrap.sunset")}</span>
 								<span>{FormatData(value.data.sys.sunset)}</span>
 							</div>
@@ -92,14 +92,14 @@ const Wrap = () => {
 							<img
 								src={`https://openweathermap.org/img/wn/${value.data.weather[0].icon}@2x.png`}
 							/>
-							<span className="text-lg font-medium">
+							<span className="text-lg font-medium text-nowrap">
 								{value.data.weather[0].description.charAt(0).toUpperCase() +
 									value.data.weather[0].description.slice(1)}
 							</span>
 						</div>
 					</div>
-					<div className="w-full flex items-center justify-center">
-						<div className="w-fit flex items-center justify-center gap-5">
+					<div className="w-full flex items-center justify-center max-lg:flex-col">
+						<div className="w-fit flex items-center justify-center gap-5 max-lg:flex-col">
 							<div className="flex flex-col justify-center items-center text-lg text-nowrap">
 								<span className="font-medium">{t("wrap.feels_like")}</span>
 								<span>
@@ -127,8 +127,8 @@ const Wrap = () => {
 							</div>
 						</div>
 					</div>
-					<div className="w-full flex items-center justify-center">
-						<div className="w-fit flex items-center justify-center gap-5">
+					<div className="w-full flex items-center justify-center max-lg:flex-col">
+						<div className="w-fit flex items-center justify-center gap-5 max-lg:flex-col">
 							<div className="flex flex-col justify-center text-lg items-center">
 								<span className="font-medium">{t("wrap.long")}</span>
 								<span>{value.data.coord.lon}</span>
@@ -153,10 +153,10 @@ const Wrap = () => {
 					</div>
 				</div>
 			)) || (
-				<div className="w-full flex flex-col items-center justify-center gap-5">
+				<div className="w-full h-full flex flex-col items-center justify-center gap-5 m-5">
 					<div className="w-full flex justify-center flex-col gap-3">
 						<h1 className="text-5xl font-extrabold">{t("wrap.title")}</h1>
-						<span className="text-lg indent-6 w-full font-semibold">
+						<span className="text-lg indent-6 w-full font-semibold max-lg:text-center">
 							{t("wrap.description")}
 						</span>
 					</div>
@@ -165,7 +165,7 @@ const Wrap = () => {
 							label={t("wrap.button")}
 							raised={true}
 							size="large"
-							className="px-3 py-1.5 bg-violet-800/50 hover:bg-violet-900"
+							className="px-3 py-1.5 bg-violet-800/50 hover:bg-violet-900 text-nowrap"
 							onClick={HandleClick}
 							loading={value.loading}
 						/>
