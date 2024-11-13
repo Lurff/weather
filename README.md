@@ -1,8 +1,11 @@
-# React + Vite
+#Learn the weather using the location.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Image](https://i.hizliresim.com/llgdyau.png)](https://hizliresim.com/llgdyau)
 
-Currently, two official plugins are available:
+#Allow the 'Locations Permissions'.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Image](https://i.hizliresim.com/98qjbe1.png)](https://hizliresim.com/98qjbe1)
+
+#Or use it by typing the name of the city you want.
+
+[![Image](https://i.hizliresim.com/fxsqeql.jpg)](https://hizliresim.com/fxsqeql)
