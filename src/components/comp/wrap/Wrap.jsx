@@ -219,7 +219,7 @@ const Wrap = () => {
 			)) || (
 				<div className="w-full h-full flex flex-col items-center justify-center gap-5 m-5">
 					<div className="w-full flex justify-center flex-col gap-3">
-						<h1 className="text-5xl font-extrabold text-center">
+						<h1 className="text-5xl font-extrabold max-lg:text-center">
 							{t("wrap.title")}
 						</h1>
 						<span className="text-lg indent-6 w-full font-semibold max-lg:text-center">
