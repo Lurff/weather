@@ -9,7 +9,7 @@ export const Provider = ({ children }) => {
 		loading: false,
 		toast: useRef(null),
 		daily: {
-			data: undefined,
+			data: [],
 			loading: false,
 		},
 	});
