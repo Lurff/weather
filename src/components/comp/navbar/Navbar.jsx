@@ -74,15 +74,15 @@ const Navbar = () => {
 			.then((response) => {
 				setValue((v) => ({ ...v, data: response, loading: false }));
 				Get15DayWeatherReport(response.name);
-			})
-			.catch(() => {
-				setValue((v) => ({ ...v, loading: false }));
-				return value.toast.current.show({
-					severity: "error",
-					summary: t("toast_city_error.title"),
-					detail: t("toast_city_error.description"),
-				});
 			});
+		// .catch(() => {
+		// 	setValue((v) => ({ ...v, loading: false }));
+		// 	return value.toast.current.show({
+		// 		severity: "error",
+		// 		summary: t("toast_city_error.title"),
+		// 		detail: t("toast_city_error.description"),
+		// 	});
+		// });
 	};
 
 	const Get15DayWeatherReport = async (cityName) => {
