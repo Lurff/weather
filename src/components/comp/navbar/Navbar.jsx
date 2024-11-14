@@ -73,9 +73,34 @@ const Navbar = () => {
 			})
 			.then((response) => {
 				setValue((v) => ({ ...v, data: response, loading: false }));
+				Get15DayWeatherReport(response.name);
 			})
 			.catch(() => {
 				setValue((v) => ({ ...v, loading: false }));
+				return value.toast.current.show({
+					severity: "error",
+					summary: t("toast_city_error.title"),
+					detail: t("toast_city_error.description"),
+				});
+			});
+	};
+
+	const Get15DayWeatherReport = async (cityName) => {
+		setValue((v) => ({ ...v, daily: { ...v.daily, loading: true } }));
+		await fetch(
+			`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${
+				import.meta.env.VITE_API_KEY
+			}&lang=${i18n.language.split("-")[0]}`
+		)
+			.then((res) => res.json())
+			.then((response) =>
+				setValue((v) => ({
+					...v,
+					daily: { data: response.list, loading: false },
+				}))
+			)
+			.catch(() => {
+				setValue((v) => ({ ...v, daily: { ...v.daily, loading: false } }));
 				return value.toast.current.show({
 					severity: "error",
 					summary: t("toast_city_error.title"),

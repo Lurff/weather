@@ -8,6 +8,10 @@ export const Provider = ({ children }) => {
 		data: undefined,
 		loading: false,
 		toast: useRef(null),
+		daily: {
+			data: undefined,
+			loading: false,
+		},
 	});
 
 	return (

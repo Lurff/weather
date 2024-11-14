@@ -31,6 +31,9 @@
 		},
 		"title": "Privacy & Policy",
 		"description": "On our site, only location information is received from users, but we only provide this location information using the coordinates of the 'latitude' and 'longitude' where our users are located and the weather information in the location they are located. The information received from users is definitely not stored, stored or shared with third-party persons. All data is processed on the browsers of our users and the calculation results are presented instantaneously.",
-		"button": "Search My Current Location"
+		"button": "Search My Current Location",
+		"15_day_weather_report": {
+			"title": "Daily Weather Report"
+		}
 	}
 }

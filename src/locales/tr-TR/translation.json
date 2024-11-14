@@ -31,6 +31,9 @@
 		},
 		"title": "Gizlilik Ve Güvenlik",
 		"description": "Sitemizde kullanıcılardan sadece konum bilgisi alınıyor fakat bu konum bilgilerini sadece kullanıcılarımızın bulunduğu 'enlem' ve 'boylam' kordinatlarını kullanıp bulundukları konumdaki hava durum bilgilerini sunuyoruz. Kullanıcılardan alınan bilgiler kesinlikle depolanmıyor, saklanmıyor veya üçüncü şahıs kişilerle paylaşılmıyor. Tüm veriler, kullanıcılarımızın tarayıcıları üzerinde işlem görür ve hesaplama sonuçları anlık olarak sunulur.",
-		"button": "Konumumdan Arama Yap"
+		"button": "Konumumdan Arama Yap",
+		"15_day_weather_report": {
+			"title": "Günlük Hava Durumu Raporu"
+		}
 	}
 }
