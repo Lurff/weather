@@ -141,7 +141,7 @@ const Wrap = () => {
 							</div>
 						</div>
 						<div className="w-full flex items-center justify-center max-lg:flex-col">
-							<div className="w-fit flex items-center justify-center gap-5 max-lg:flex-col">
+							<div className="w-fit flex items-center justify-center gap-5 max-lg:flex-wrap">
 								<div className="flex flex-col justify-center items-center text-lg text-nowrap">
 									<span className="font-medium">{t("wrap.feels_like")}</span>
 									<span>
@@ -171,7 +171,7 @@ const Wrap = () => {
 							</div>
 						</div>
 						<div className="w-full flex items-center justify-center max-lg:flex-col">
-							<div className="w-fit flex items-center justify-center gap-5 max-lg:flex-col">
+							<div className="w-fit flex items-center justify-center gap-3 max-lg:flex-wrap">
 								<div className="flex flex-col justify-center text-lg items-center">
 									<span className="font-medium">{t("wrap.long")}</span>
 									<span>{value.data.coord.lon}</span>
